@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  include ReusableMethods
+
   before_action :set_current_user
   around_action :switch_locale
 
